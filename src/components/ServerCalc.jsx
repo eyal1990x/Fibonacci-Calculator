@@ -13,6 +13,7 @@ import { Sorting } from './Sorting';
 import { InputNumber } from './InputNumber.jsx';
 import { AnswerBtn } from './AswerBtn';
 
+
 export const ServerCalc = () => {
 
     const { X, Y, handleX, handleY, setY } = useFibonacci()
@@ -110,7 +111,7 @@ export const ServerCalc = () => {
     return (
         <div >
             <div className='calc'>
-                <h3 className='fibonacciNumber'>Calculator the Fibonacci number</h3> 
+                <h3 className='fibonacciNumber'>Calculator the Fibonacci number</h3>
                 <InputNumber handleX={handleX} />
                 <AnswerBtn answer={answer} />
                 <div>
@@ -123,10 +124,14 @@ export const ServerCalc = () => {
             </div>
             <div className='errorMessage'>
                 {error && <DisplayError error={error} />}
-            </div>  
-            <p> You can save the calculation of Fibonacci numbers smaller then 50</p>
+            </div>
             <div>
-                <Checkbox handleSave={handleSave} />
+              <p> You can save the calculation of Fibonacci numbers smaller then 50</p>
+            <a className='link'  target="_blank" href="https://github.com/israeltechchallenge/fibonacci-server">For saving! Please clone the server repository</a>  
+            </div>
+            
+            <div className='checkBox'>
+                <Checkbox handleSave={handleSave} /> Save Calculation
             </div>
             <div className='results'>
                 {render && <h2>results</h2>}
