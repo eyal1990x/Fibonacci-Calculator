@@ -1,0 +1,58 @@
+@keyframes spinner {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  .container{
+    margin: 2rem;
+  }
+  .loading-spinner {
+    width: 0.5vw;
+    height: 0.5vh;
+    border: 10px solid #f3f3f3; /* Light grey */
+    border-top: 10px solid #383636; /* Black */
+    border-radius: 50%;
+    animation: spinner 1.5s linear infinite;
+  }
+  .calc{
+    display: flex;
+    margin-bottom: 0;
+}
+.answer{
+    margin-left: 1vw;
+}
+
+.answerBtn{
+    background-color: rgb(53, 147, 254);
+    border-radius: 20%;
+    border: none;
+}
+.error{
+    margin-left: 1vw;
+    margin-right: 1vw;
+    width: 3vw;
+    border: 2px solid rgb(223, 116, 116);
+    border-radius: 10%;
+}
+.xInput{
+    margin-left: 1vw;
+    margin-right: 1vw;
+    width: 3vw;
+}
+.errorMessage{
+    display: block;
+    color: rgb(108, 43, 43);
+    width: 12.5vw;
+    margin-left: 8.5vw;
+    margin-top: 0.5vh;
+    font-size: 1vw;
+    border-radius: 10%;
+    background-color: rgb(226, 195, 195);;
+}
+.fibonacciNumber{
+  margin: 0;
+}
